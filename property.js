@@ -2,7 +2,7 @@
 // Duplica este archivo y modifica estos campos para cada nuevo alojamiento.
 // No incluyas contraseñas Wi-Fi, códigos de acceso ni datos privados.
 window.GUESTGUIDE_PROPERTY = {
-  name: 'Casa Mare',
+  name: 'Apartamento demo',
   locationLabel: 'BENALMÁDENA · COSTA DEL SOL',
   cityLabel: { es: 'Benalmádena, Málaga', en: 'Benalmádena, Málaga' },
   eyebrow: {
