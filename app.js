@@ -1,0 +1,1 @@
+let lang='es';const btn=document.getElementById('langBtn');btn.addEventListener('click',()=>{lang=lang==='es'?'en':'es';document.documentElement.lang=lang;document.querySelectorAll('[data-es]').forEach(el=>{const val=el.getAttribute('data-'+lang);if(val!==null)el.innerHTML=val});btn.textContent=lang==='es'?'ENGLISH ↗':'ESPAÑOL ↗';});
