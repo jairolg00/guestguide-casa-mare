@@ -4,7 +4,10 @@ const property = window.GUESTGUIDE_PROPERTY || {};
 const btn = document.getElementById('langBtn');
 
 function applyPropertyData() {
-  const localized = (value) => typeof value === 'string' ? value : (value?.[lang] || '');
+  const localized = (value) => {
+    const text = typeof value === 'string' ? value : (value?.[lang] || '');
+    return text.replaceAll('{{name}}', property.name || '');
+  };
   document.title = (property.name || 'GuestGuide') + ' | GuestGuide';
   const fields = {
     propertyName: property.name,
