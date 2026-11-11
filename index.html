@@ -4,13 +4,13 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#173b4a">
-<title>Casa Mare | GuestGuide Demo</title>
+<title>Casa Mare | GuestGuide</title>
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<header class="topbar"><div class="brand">CASA MARE<small>BENALMÁDENA · COSTA DEL SOL</small></div><button class="lang" id="langBtn" aria-label="Cambiar idioma">ENGLISH ↗</button></header>
+<header class="topbar"><div class="brand"><span id="propertyName">CASA MARE</span><small id="propertyLocation">BENALMÁDENA · COSTA DEL SOL</small></div><button class="lang" id="langBtn" aria-label="Cambiar idioma">ENGLISH ↗</button></header>
 <main>
-<section class="hero"><div class="hero-inner"><div class="eyebrow" data-es="Tu refugio junto al Mediterráneo" data-en="Your Mediterranean seaside escape">Tu refugio junto al Mediterráneo</div><h1 data-es="Bienvenido a<br>Casa Mare." data-en="Welcome to<br>Casa Mare.">Bienvenido a<br>Casa Mare.</h1><p data-es="Un espacio para desconectar, disfrutar del mar y sentirte como en casa. Hemos preparado esta guía para que aproveches cada momento de tu estancia." data-en="A place to slow down, enjoy the sea and feel at home. We have created this guide to help you make the most of every moment of your stay.">Un espacio para desconectar, disfrutar del mar y sentirte como en casa. Hemos preparado esta guía para que aproveches cada momento de tu estancia.</p><div class="hero-meta"><span data-es="Benalmádena, Málaga" data-en="Benalmádena, Málaga">Benalmádena, Málaga</span><span data-es="Guía del huésped" data-en="Guest guide">Guía del huésped</span><span>ES / EN</span></div></div></section>
+<section class="hero"><div class="hero-inner"><div class="eyebrow" id="propertyEyebrow" data-es="Tu refugio junto al Mediterráneo" data-en="Your Mediterranean seaside escape">Tu refugio junto al Mediterráneo</div><h1 id="propertyWelcome" data-es="Bienvenido a<br>Casa Mare." data-en="Welcome to<br>Casa Mare.">Bienvenido a<br>Casa Mare.</h1><p id="propertyIntro" data-es="Un espacio para desconectar, disfrutar del mar y sentirte como en casa. Hemos preparado esta guía para que aproveches cada momento de tu estancia." data-en="A place to slow down, enjoy the sea and feel at home. We have created this guide to help you make the most of every moment of your stay.">Un espacio para desconectar, disfrutar del mar y sentirte como en casa. Hemos preparado esta guía para que aproveches cada momento de tu estancia.</p><div class="hero-meta"><span id="propertyCity" data-es="Benalmádena, Málaga" data-en="Benalmádena, Málaga">Benalmádena, Málaga</span><span data-es="Guía del huésped" data-en="Guest guide">Guía del huésped</span><span>ES / EN</span></div></div></section>
 <div class="wrap">
 <section class="welcome"><div><div class="section-kicker" data-es="Una bienvenida especial" data-en="A warm welcome">Una bienvenida especial</div><h2 data-es="Nos alegra tenerte aquí." data-en="We're glad you're here.">Nos alegra tenerte aquí.</h2><p data-es="Gracias por elegir Casa Mare. Tanto si vienes a explorar la Costa del Sol como si solo quieres relajarte frente al mar, esperamos que disfrutes de una estancia tranquila e inolvidable. En esta guía encontrarás lo esencial del apartamento y algunos lugares que merece la pena descubrir." data-en="Thank you for choosing Casa Mare. Whether you're here to explore the Costa del Sol or simply relax by the sea, we hope you enjoy a peaceful and memorable stay. This guide brings together the essentials of the apartment and a few places worth discovering.">Gracias por elegir Casa Mare. Tanto si vienes a explorar la Costa del Sol como si solo quieres relajarte frente al mar, esperamos que disfrutes de una estancia tranquila e inolvidable. En esta guía encontrarás lo esencial del apartamento y algunos lugares que merece la pena descubrir.</p></div><aside class="note" data-es="“Que el sonido del mar marque el ritmo de estos días.”" data-en="“Let the sound of the sea set the pace for your stay.”">“Que el sonido del mar marque el ritmo de estos días.”</aside></section>
 <nav class="quick"><a href="#arrival"><span class="num">01 /</span><strong data-es="Llegada" data-en="Arrival">Llegada</strong><small data-es="Check-in y salida" data-en="Check-in & check-out">Check-in y salida</small></a><a href="#apartment"><span class="num">02 /</span><strong data-es="El apartamento" data-en="The apartment">El apartamento</strong><small data-es="Todo lo que necesitas" data-en="Everything you need">Todo lo que necesitas</small></a><a href="#explore"><span class="num">03 /</span><strong data-es="Descubre" data-en="Explore">Descubre</strong><small data-es="Alrededores y consejos" data-en="Local tips & places">Alrededores y consejos</small></a><a href="#help"><span class="num">04 /</span><strong data-es="Ayuda" data-en="Need help?">Ayuda</strong><small data-es="Estamos para ayudarte" data-en="We're here to help">Estamos para ayudarte</small></a></nav>
@@ -25,11 +25,12 @@
 <a href="#apartment"><span>✧</span><b data-es="Casa" data-en="Home">Casa</b></a>
 <a href="#explore"><span>⌖</span><b data-es="Explorar" data-en="Explore">Explorar</b></a>
 <a href="#help"><span>?</span><b data-es="Ayuda" data-en="Help">Ayuda</b></a>
-</nav><div class="demo-label">DEMO · CASA MARE</div>
+</nav><div class="demo-label" id="demoLabel">DEMO · CASA MARE</div>
 <!-- PLANTILLA REUTILIZABLE:
 Sustituir CASA MARE, ubicación, imágenes, horarios, instrucciones,
 recomendaciones y contacto por los datos verificados de cada alojamiento.
 No publicar códigos de cerraduras, contraseñas privadas ni datos sensibles.
 -->
+<script src="property.js"></script>
 <script src="app.js" defer></script>
 </body></html>
