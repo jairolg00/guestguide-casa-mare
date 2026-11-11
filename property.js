@@ -10,12 +10,12 @@ window.GUESTGUIDE_PROPERTY = {
     en: 'Your Mediterranean seaside escape'
   },
   welcomeTitle: {
-    es: 'Bienvenido a<br>Casa Mare.',
-    en: 'Welcome to<br>Casa Mare.'
+    es: 'Bienvenido a<br>{{name}}.',
+    en: 'Welcome to<br>{{name}}.'
   },
   intro: {
     es: 'Un espacio para desconectar, disfrutar del mar y sentirte como en casa. Hemos preparado esta guía para que aproveches cada momento de tu estancia.',
     en: 'A place to slow down, enjoy the sea and feel at home. We have created this guide to help you make the most of every moment of your stay.'
   },
-  demoLabel: 'DEMO · CASA MARE'
+  demoLabel: 'DEMO · {{name}}'
 };
